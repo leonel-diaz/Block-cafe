@@ -6,6 +6,7 @@
     --primario:#784D3C;
     --blanco:#FFFF;
     --negro:#000;
+    --gris:#e41212;
 
 
 }
@@ -88,6 +89,33 @@ header{
     font-size: 1.8rem;
     color: var(--blanco);
  }
+ /* Estilos para el block */
+ .entrada{
+    border-bottom:1px solid var(--gris);
+    margin-bottom: 2rem;
+ }
+ .entrada:last-of-type{
+    border: none;
+    margin-bottom: 0;
+ }
+ .boton{
+    display: block;
+
+ }
+ .boton--primario{
+    background-color: var(--negro);
+    font-family: var(--fuenteEncabezado);
+    color: var(--blanco);
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+ }
+img{
+    max-width: 100%;
+}
 
 @media (min-width: 768px){
    .barra{
@@ -99,6 +127,14 @@ header{
  .navegacion{
     display: flex;
     gap: 2rem;
+ }
+ .contenido-principal{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 4rem;
+ }
+ .boton{
+    display: inline-block;
  }
  
 }
